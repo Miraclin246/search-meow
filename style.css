@@ -1,0 +1,123 @@
+body {
+  font-family: 'Comic Sans MS', cursive;
+  background: url("assets/kitty-background.jpg") no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.welcome {
+  font-size: 26px; /* slightly smaller */
+  font-weight: bold;
+  color: #453F40;
+  position: absolute;
+  top: 20px;
+  left: 40%; /* middle but nudged left */
+  transform: translateX(-50%);
+}
+
+.top-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.kittymail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 800; /* stronger bold */
+  color: #453F40;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  background: none; /* transparent */
+  border: none;
+  display: inline-block;
+}
+
+.profile-frame {
+  position: relative;
+  width: 80px;   /* bigger frame */
+  height: 80px;
+}
+
+.profile-pic {
+  width: 52px;   /* slightly smaller avatar */
+  height: 52px;
+  border-radius: 50%;
+  object-fit: cover;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  z-index: 1;
+}
+
+.cat-ears {
+  position: absolute;
+  top: -8px;
+  right: 9px;
+  width: 80px;   /* bigger ears to frame */
+  height: auto;
+  z-index: 2;
+}
+
+.search-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 140px; /* slightly lower */
+}
+
+.logo {
+  font-size: 48px;
+  font-weight: bold;
+  color: #FF69B4; /* pink for Search MEOW! */
+  text-shadow: 2px 2px #ffc0cb;
+  margin-bottom: 8px; /* tighter spacing */
+}
+
+.agent-text {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 8px; /* tighter spacing */
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 30px;
+  padding: 10px 20px;
+  box-shadow: 0 4px 10px rgba(255, 182, 193, 0.4);
+  width: 60%;
+  margin-bottom: 8px; /* tighter spacing */
+}
+
+.search-bar input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  color: #ff69b4;
+  padding-left: 0; /* start exactly at "Ask" */
+}
+
+.funny-text {
+  font-size: 14px;
+  color: #444;
+  margin-top: 8px; /* tighter spacing */
+  font-style: italic;
+}
